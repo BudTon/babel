@@ -13,9 +13,14 @@
 Ваша задача подключить Babel к проекту и настроить сборку с его использованием.
 
 1. Установите Babel (`npm install --save-dev @babel/core @babel/cli @babel/preset-env`).
-2. Установите CoreJS (`npm install core-js@3`).
+   ![alt text](image.png)
 
-2. Настройте скрипт запуска `build` для сборки с помощью `npm`. Для этого в секции `scripts` файла `package.json` пропишите:
+2. Установите CoreJS (`npm install core-js@3`).
+   ![alt text](image-1.png)
+
+   ![alt text](image-2.png)
+
+3. Настройте скрипт запуска `build` для сборки с помощью `npm`. Для этого в секции `scripts` файла `package.json` пропишите:
 ```json
 {
     ...
@@ -27,7 +32,7 @@
 }
 ```
 
-3. Создайте конфиг `babel.config.json` и пропишите `@babel/preset-env`:
+1. Создайте конфиг `babel.config.json` и пропишите `@babel/preset-env`:
 ```javascript
 {
   "presets": [
@@ -42,7 +47,7 @@
 }
 ```
 
-4. Создайте файл `src/app.js` со следующим содержимым:
+1. Создайте файл `src/app.js` со следующим содержимым:
 ```javascript
 const characters = [
   {name: 'мечник', health: 10},
